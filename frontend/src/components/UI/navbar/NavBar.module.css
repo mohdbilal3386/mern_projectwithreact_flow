@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  height: 60px;
+}
+
+.navbarItems {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none; /* Remove default underline */
+  transition: background-color 0.3s ease;
+}
+.navbarItem {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  text-decoration: none; /* Remove default underline */
+  transition: background-color 0.3s ease;
+}
+
+.navbarItem:hover {
+  background-color: var(--hover-background-color);
+}
+
+.navbarItem.active {
+  border-bottom: 2px solid var(--button-background-color); /* Custom underline */
+}
+
+.menuButton {
+  display: none; /* Hide the menu button by default */
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbarItems {
+    display: none;
+  }
+
+  .navbarItems.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 10px 0;
+  }
+
+  .navbarItem {
+    padding: 15px;
+  }
+
+  .menuButton {
+    display: block; /* Show the menu button on mobile/tablet */
+  }
+}

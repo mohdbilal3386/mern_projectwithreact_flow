@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  height: 90vh;
+}
+
+.reactFlowWrapper {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.saveButton {
+  background-color: #6200ea;
+  margin-right: 10px;
+}
+
+.loadButton {
+  background-color: #03dac6;
+}
+
+.buttonsWrapper {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}

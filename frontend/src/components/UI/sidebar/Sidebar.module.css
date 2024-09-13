@@ -1,0 +1,32 @@
+.sidebar {
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  height: 85vh;
+  width: 250px;
+  background-color: #fafafa; /* Light background for the sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+.draggableItem {
+  margin-bottom: 12px;
+  padding: 14px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: grab;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); /* Subtle shadow for elevation */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.draggableItem:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Elevation on hover */
+}
+
+.draggableItem:active {
+  cursor: grabbing;
+}
+
+.draggableItem:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,17 @@
+:root {
+  --background-color: #333; /* Dark background for visibility */
+  --text-color: #ffffff; /* White text for contrast */
+  --hover-background-color: #444; /* Lighter dark color for hover effect */
+  --input-background-color: #555; /* Darker input fields */
+  --input-text-color: #ffffff;
+  --button-background-color: #007bff; /* Blue button */
+  --button-text-color: #ffffff;
+  --button-hover-background-color: #0056b3;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
